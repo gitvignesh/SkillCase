@@ -16,7 +16,6 @@ out/
 # Gradle files
 .gradle/
 build/
-local.properties
 **/build/
 **/out/
 !gradle-wrapper.jar
@@ -36,7 +35,6 @@ local.properties
 .idea/.name
 .idea/misc.xml
 .idea/gradle.xml
-.idea/modules.xml
 .idea/vcs.xml
 .idea/dictionaries/
 .idea/copyright/
