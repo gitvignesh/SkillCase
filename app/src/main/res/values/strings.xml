@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SkillCase</string>
+    <string name="app_tagline">Showcasing App Development Skills</string>
+    <string name="login">Login</string>
+    <string name="cd_google_sign_in">Google sign in</string>
+    <string name="developer">Developed by Vignesh Shenoy</string>
 </resources>
