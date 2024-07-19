@@ -1,4 +1,4 @@
-package com.karnamic.skillcase.ui.theme
+package com.karnamic.skillcase.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

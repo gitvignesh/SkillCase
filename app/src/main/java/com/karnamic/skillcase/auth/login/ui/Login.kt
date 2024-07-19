@@ -1,4 +1,4 @@
-package com.karnamic.skillcase.ui.screens
+package com.karnamic.skillcase.auth.login.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -33,8 +33,8 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.karnamic.skillcase.R
-import com.karnamic.skillcase.ui.NavigationItem
-import com.karnamic.skillcase.ui.theme.SkillCaseTheme
+import com.karnamic.skillcase.NavigationItem
+import com.karnamic.skillcase.theme.SkillCaseTheme
 
 @Composable
 fun LoginScreen(navController: NavController) {

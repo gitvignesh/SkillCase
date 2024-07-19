@@ -1,4 +1,4 @@
-package com.karnamic.skillcase.ui.theme
+package com.karnamic.skillcase.theme
 
 import androidx.compose.ui.graphics.Color
 

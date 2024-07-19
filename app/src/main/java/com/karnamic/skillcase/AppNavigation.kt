@@ -1,12 +1,12 @@
-package com.karnamic.skillcase.ui
+package com.karnamic.skillcase
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.karnamic.skillcase.ui.screens.HomeScreen
-import com.karnamic.skillcase.ui.screens.LoginScreen
+import com.karnamic.skillcase.home.ui.HomeScreen
+import com.karnamic.skillcase.auth.login.ui.LoginScreen
 
 enum class Screen {
     LOGIN,

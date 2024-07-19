@@ -1,4 +1,4 @@
-package com.karnamic.skillcase.ui.screens
+package com.karnamic.skillcase.home.ui
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,7 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.karnamic.skillcase.ui.theme.SkillCaseTheme
+import com.karnamic.skillcase.theme.SkillCaseTheme
 
 @Composable
 fun HomeScreen(navController: NavController, modifier: Modifier = Modifier) {
