@@ -7,33 +7,30 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.karnamic.skillcase.home.ui.HomeScreen
 import com.karnamic.skillcase.auth.login.ui.LoginScreen
-
-enum class Screen {
-    LOGIN,
-    HOME
-}
-
-sealed class NavigationItem(val route: String) {
-    data object Login : NavigationItem(Screen.LOGIN.name)
-    data object Home : NavigationItem(Screen.HOME.name)
-}
+import kotlinx.serialization.Serializable
 
 @Composable
 fun AppNavHost(
-    modifier: Modifier = Modifier,
     navController: NavHostController,
-    startDestination: String = NavigationItem.Login.route
+    startDestination: Screen,
+    modifier: Modifier = Modifier,
 ) {
-    NavHost(
-        modifier = modifier,
-        navController = navController,
-        startDestination = startDestination,
-    ) {
-        composable(NavigationItem.Login.route) {
-            LoginScreen(navController)
+
+    NavHost(navController = navController, startDestination = startDestination, modifier = modifier) {
+        composable<Screen.Login> {
+            LoginScreen(navController = navController)
         }
-        composable(NavigationItem.Home.route) {
-            HomeScreen(navController)
+        composable<Screen.Home> {
+            HomeScreen(navController = navController)
         }
     }
+}
+
+sealed class Screen {
+
+    @Serializable
+    data object Login: Screen()
+
+    @Serializable
+    data object Home: Screen()
 }

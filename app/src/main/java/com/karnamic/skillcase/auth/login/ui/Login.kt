@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.karnamic.skillcase.R
-import com.karnamic.skillcase.NavigationItem
+import com.karnamic.skillcase.Screen
 import com.karnamic.skillcase.theme.SkillCaseTheme
 
 @Composable
@@ -96,7 +96,7 @@ fun LoginScreen(navController: NavController) {
             Spacer(modifier = Modifier.height(16.dp))
             Button(
                 onClick = {
-                    navController.navigate(NavigationItem.Home.route)
+                    navController.navigate(Screen.Home)
                 },
                 modifier = Modifier
                     .fillMaxWidth()
@@ -112,7 +112,7 @@ fun LoginScreen(navController: NavController) {
                 imageVector = ImageVector.vectorResource(id = R.drawable.google_sign_in),
                 contentDescription = stringResource(R.string.cd_google_sign_in),
                 modifier = Modifier.clickable {
-                    navController.navigate(NavigationItem.Home.route)
+                    navController.navigate(Screen.Home)
                 }
             )
         }

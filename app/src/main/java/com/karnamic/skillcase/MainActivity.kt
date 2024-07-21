@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             SkillCaseTheme {
-                AppNavHost(navController = rememberNavController())
+                AppNavHost(navController = rememberNavController(), Screen.Login)
             }
         }
     }
@@ -34,6 +34,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingPreview() {
     SkillCaseTheme {
-        AppNavHost(navController = rememberNavController())
+        AppNavHost(navController = rememberNavController(), Screen.Login)
     }
 }
